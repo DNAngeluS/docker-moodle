@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         libfreetype6-dev \
         libjpeg62-turbo-dev \
         libmcrypt-dev \
-        libpng12-dev \
+        libpng12 \
 	libtool \
 	libcurl4-gnutls-dev \
 	libxmlrpc-core-c3-dev \
