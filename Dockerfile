@@ -38,7 +38,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 #    && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
 #    && docker-php-ext-install -j$(nproc) gd \
 
-ENV MOODLE_VERSION 33
+ENV MOODLE_VERSION 310
 ENV MOODLE_SHA256 b2ba30f5d6ca434dee8fa8d268b294bfb428bd095ec32c6e96f84079254ccf45
 
 VOLUME /app
@@ -52,13 +52,6 @@ RUN set -ex; \
 	rm moodle.tgz; \
 	chown -R root:www-data /usr/src/moodle
 
-#RUN set -ex; \
-#	chown -R root:www-data /data; \
-#	chmod -R 775 /app/moodle /data; \
-#	rmdir /var/www/html; \
-#	ln -s /app/moodle /var/www/html; \
-#	echo "* * * * *    /usr/bin/php /var/www/html/admin/cli/cron.php > /dev/null" > /app/cron; \
-#	crontab /app/cron
 WORKDIR /app
 
 COPY docker-entrypoint.sh /usr/local/bin/
