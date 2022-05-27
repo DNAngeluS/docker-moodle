@@ -1,6 +1,6 @@
 # YAMDI (Moodle with Docker)
 
-This is yet another moodle Docker image, since they still haven't published and official image. This is an image I've been using for a few years and update not too frequently. Please feel free to fork or copy this repository and modified as you need.
+This is yet another moodle Docker image, since they still haven't published any official one. This is an image I've been using for a few years and update not too frequently. Please feel free to fork or copy this repository and modified as you need.
 
 ## Installation
 
